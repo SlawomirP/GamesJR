@@ -21,33 +21,39 @@ public class GamesMenu {
     private final static int LIMIT = 6;
     private final static int LOWER_BOUND = 1;
     private final static int UPPER_BOUND = 99;
-    private final SetCreator userNumbers;
+
 
 
     public GamesMenu() {
         this.scanner = new Scanner(System.in);
-        this.userNumbers = new SetCreator();
     }
 
     public void start() {
         while (true) {
+
             message.introductionMessage();
             message.gamesMenuMessage();
             String userDecision = scanner.nextLine();
+
+            if(!userDecision.equals("0") || !userDecision.equals("1") ){
+                message.chosenWrongOptionMessage();
+            }
 
             if (userDecision.equals("0")) {
                 break;
             }
 
             if (userDecision.equals("1")) {
+                SetCreator userNumbers = new SetCreator();
 
                 System.out.println(randomNumbersSet);
 
                 message.lottoGameIntroductionMessage();
                 message.lottoGameRulesMessage();
 
+
                 while (userNumbers.getSize() != LIMIT) {
-                    int numberFromUser = Integer.parseInt(scanner.nextLine());
+                    int numberFromUser = scanner.nextInt();
                     if (isInBounds(numberFromUser)) {
                         userNumbers.addToSet(numberFromUser);
                     }else {
@@ -58,9 +64,9 @@ public class GamesMenu {
 //                System.out.println(userNumbers.getSet());
                 int hitsCounter = HIT_NUMBERS_COUNTER.howManyHitNumbers(randomNumbersSet,userNumbers.getSet());
                 WINNING_DECISION.decisionAboutWin(hitsCounter, LIMIT);
-
-
             }
+
+
 
         }
     }

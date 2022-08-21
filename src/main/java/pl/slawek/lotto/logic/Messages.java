@@ -20,11 +20,11 @@ public class Messages {
                 "You can't repeat the numbers.\n" +
                 "Press ENTER after input every single number.");
     }
-
     public void lottoGameOutOfBoundMessage(){
         System.out.println("Yours number should be between 1 and 99.\nPlease correct yourself.");
     }
-    public void lottoGameAfterCompareResultComment(int compareResult, int limit){
-        System.out.println("Your result is " + compareResult + "/" + limit);
+
+    public void chosenWrongOptionMessage(){
+        System.out.println("Please, choose correct option.");
     }
 }

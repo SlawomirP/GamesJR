@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="stworzenie klasy liczacej trafione numery">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/IsInBounds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/Messages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/WinningDecision.java" afterDir="false" />
+    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="tworzenie logiki programu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/ForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/ForTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/HitNumbersCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/HitNumbersCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/UserSetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/SetCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661103453951</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tworzenie logiki programu">
+      <created>1661115976298</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661115976298</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +151,7 @@
     <MESSAGE value="tworzenie podstawowych klas i metod" />
     <MESSAGE value="stworzenie klasy generujacej losowy set liczb" />
     <MESSAGE value="stworzenie klasy liczacej trafione numery" />
-    <option name="LAST_COMMIT_MESSAGE" value="stworzenie klasy liczacej trafione numery" />
+    <MESSAGE value="tworzenie logiki programu" />
+    <option name="LAST_COMMIT_MESSAGE" value="tworzenie logiki programu" />
   </component>
 </project>
