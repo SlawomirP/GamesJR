@@ -3,13 +3,13 @@ package pl.slawek.lotto.logic;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class SetCreator {
+public class UserSetCreator {
     private HashSet<Integer> set;
-    private Scanner scanner;
+    private final Scanner SCANNER;
 
-    public SetCreator() {
+    public UserSetCreator() {
         this.set = new HashSet<>();
-        this.scanner = new Scanner(System.in);
+        this.SCANNER = new Scanner(System.in);
     }
 
     void addToSet(int number){
