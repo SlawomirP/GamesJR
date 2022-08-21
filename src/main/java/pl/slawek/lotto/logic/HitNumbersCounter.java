@@ -1,9 +1,10 @@
 package pl.slawek.lotto.logic;
 
-import java.util.Set;
+import java.util.HashSet;
+
 
 public class HitNumbersCounter {
-    int howManyHitNumbers(Set<Integer> firstSet, Set<Integer> secondSet) {
+    public int howManyHitNumbers(HashSet<Integer> firstSet, HashSet<Integer> secondSet) {
         int hitsCounter = 0;
         for (Integer number : firstSet) {
             if (secondSet.contains(number)) {

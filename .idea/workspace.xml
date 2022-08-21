@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="stworzenie klasy generujacej losowy set liczb">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/HitNumbersCounter.java" afterDir="false" />
+    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="stworzenie klasy liczacej trafione numery">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/IsInBounds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/Messages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/WinningDecision.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/ForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/ForTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/HitNumbersCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/HitNumbersCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/UserSetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/SetCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,11 +49,14 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.slawek.lotto.logic" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pl.slawek.lotto.ui" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MainForGames">
     <configuration name="ForTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.ForTests" />
       <module name="GamesJR" />
@@ -58,8 +70,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainForGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.MainForGames" />
+      <module name="GamesJR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.slawek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainForGames" />
         <item itemvalue="Application.ForTests" />
       </list>
     </recent_temporary>
@@ -94,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661102488565</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="stworzenie klasy liczacej trafione numery">
+      <created>1661103394968</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661103394968</updated>
+    </task>
+    <task id="LOCAL-00005" summary="stworzenie klasy liczacej trafione numery">
+      <created>1661103453951</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661103453951</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tworzenie podstawowych klas i metod" />
     <MESSAGE value="stworzenie klasy generujacej losowy set liczb" />
-    <option name="LAST_COMMIT_MESSAGE" value="stworzenie klasy generujacej losowy set liczb" />
+    <MESSAGE value="stworzenie klasy liczacej trafione numery" />
+    <option name="LAST_COMMIT_MESSAGE" value="stworzenie klasy liczacej trafione numery" />
   </component>
 </project>
