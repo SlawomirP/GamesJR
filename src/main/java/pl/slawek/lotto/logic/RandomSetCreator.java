@@ -15,8 +15,7 @@ public class RandomSetCreator {
 
     HashSet<Integer> getRandomNumbersSet(){
         while(this.set.size() != 6){
-            int randomNumber = randomNumberGenerator.inputNumber(LOWER_BOUND,UPPER_BOUND);
-            this.set.add(randomNumber);
+            this.set.add(randomNumberGenerator.inputNumber(LOWER_BOUND,UPPER_BOUND));
         }
         return this.set;
     }
