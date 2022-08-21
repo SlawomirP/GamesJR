@@ -17,11 +17,6 @@ public class ForTests {
         System.out.println(hitNumbersCounter.howManyHitNumbers(test, test2));
 
 
-
-
-
-
-
     }
 
 }

@@ -12,11 +12,11 @@ public class UserSetCreator {
         this.SCANNER = new Scanner(System.in);
     }
 
-    void addToSet(int number){
+    void addToSet(int number) {
         this.set.add(number);
     }
 
-    int setSize(){
+    int setSize() {
         return this.set.size();
     }
 }
