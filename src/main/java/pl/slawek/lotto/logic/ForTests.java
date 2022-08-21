@@ -5,12 +5,17 @@ import java.util.HashSet;
 public class ForTests {
     public static void main(String[] args) {
 
-        RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
-        RandomSetCreator randomSetCreator = new RandomSetCreator();
 
-        HashSet<Integer> test = randomSetCreator.getRandomNumbersSet();
+        HitNumbersCounter hitNumbersCounter = new HitNumbersCounter();
+
+        HashSet<Integer> test = new RandomSetCreator().getRandomNumbersSet();
+        HashSet<Integer> test2 = new RandomSetCreator().getRandomNumbersSet();
 
         System.out.println(test);
+        System.out.println(test2);
+
+        System.out.println(hitNumbersCounter.howManyHitNumbers(test, test2));
+
 
 
 
