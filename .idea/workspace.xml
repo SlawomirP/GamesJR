@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="ustawienie limitu na wpisywane liczby">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/ForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/ForTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/SetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/SetCreator.java" afterDir="false" />
+    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="jest ok, przed wyrzucaniem do metod">
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661171610365</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="jest ok, przed wyrzucaniem do metod">
+      <created>1661173188577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661173188577</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +188,7 @@
     <MESSAGE value="tworzenie logiki programu, przed zamiana na static" />
     <MESSAGE value="chyba jest juz ok" />
     <MESSAGE value="ustawienie limitu na wpisywane liczby" />
-    <option name="LAST_COMMIT_MESSAGE" value="ustawienie limitu na wpisywane liczby" />
+    <MESSAGE value="jest ok, przed wyrzucaniem do metod" />
+    <option name="LAST_COMMIT_MESSAGE" value="jest ok, przed wyrzucaniem do metod" />
   </component>
 </project>
