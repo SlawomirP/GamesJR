@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="jest ok, pisanie testow">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/SetsForTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/IsInBoundsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/HitNumbersCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/HitNumbersCounterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -58,64 +58,7 @@
       <recent name="pl.slawek.lotto.logic" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HitNumbersCounterTest">
-    <configuration name="ForTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.ForTests" />
-      <module name="GamesJR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainForGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.MainForGames" />
-      <module name="GamesJR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.slawek.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DecisionCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GamesJR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.DecisionCheckerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DecisionCheckerTest.whatDecisionIs_Int_0_False" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GamesJR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.DecisionCheckerTest" />
-      <option name="METHOD_NAME" value="whatDecisionIs_Int_0_False" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.pl.slawek.lotto.logic in GamesJR">
     <configuration name="HitNumbersCounterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GamesJR" />
       <extension name="coverage">
@@ -131,13 +74,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IsInBoundsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GamesJR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.slawek.lotto.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.IsInBoundsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomSetCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GamesJR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.slawek.lotto.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.RandomSetCreatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WinningDecisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GamesJR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.slawek.lotto.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.WinningDecisionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pl.slawek.lotto.logic in GamesJR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GamesJR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.slawek.lotto.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.pl.slawek.lotto.logic in GamesJR" />
+        <item itemvalue="JUnit.WinningDecisionTest" />
+        <item itemvalue="JUnit.RandomSetCreatorTest" />
+        <item itemvalue="JUnit.IsInBoundsTest" />
         <item itemvalue="JUnit.HitNumbersCounterTest" />
-        <item itemvalue="Application.MainForGames" />
-        <item itemvalue="JUnit.DecisionCheckerTest" />
-        <item itemvalue="JUnit.DecisionCheckerTest.whatDecisionIs_Int_0_False" />
-        <item itemvalue="Application.ForTests" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661183640206</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="jest ok, pisanie testow">
+      <created>1661187648622</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661187648622</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
