@@ -13,7 +13,7 @@ import static pl.slawek.lotto.logic.DecisionChecker.whatDecisionIs;
 import static pl.slawek.lotto.logic.IsInBounds.isInBounds;
 
 public class GamesMenu {
-    private final Scanner scanner;
+    private final Scanner scanner = new Scanner(System.in);
     private SetCreator userNumbers = new SetCreator();
     private final static RandomSetCreator RANDOM_SET_CREATOR = new RandomSetCreator();
     private HashSet<Integer> randomComputerNumbers = RANDOM_SET_CREATOR.getRandomNumbersSet();
@@ -28,7 +28,6 @@ public class GamesMenu {
 
 
     public GamesMenu() {
-        this.scanner = new Scanner(System.in);
     }
 
     public void start() {
@@ -63,6 +62,7 @@ public class GamesMenu {
 
                 message.wantPlayAgain();
                 wantToPlay = whatDecisionIs(scanner.next());
+                continue;
             }
             if (userDecision.equals("0")) {
                 message.endProgramMessage();

@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="jest ok, pisanie testow">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/DecisionCheckerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/HitNumbersCounterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/SetsForTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/DecisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/DecisionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/HitNumbersCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/HitNumbersCounterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.slawek.lotto.logic" />
@@ -59,7 +58,7 @@
       <recent name="pl.slawek.lotto.logic" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DecisionCheckerTest">
+  <component name="RunManager" selected="JUnit.HitNumbersCounterTest">
     <configuration name="ForTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.ForTests" />
       <module name="GamesJR" />
@@ -117,11 +116,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HitNumbersCounterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GamesJR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.slawek.lotto.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.HitNumbersCounterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HitNumbersCounterTest" />
+        <item itemvalue="Application.MainForGames" />
         <item itemvalue="JUnit.DecisionCheckerTest" />
         <item itemvalue="JUnit.DecisionCheckerTest.whatDecisionIs_Int_0_False" />
-        <item itemvalue="Application.MainForGames" />
         <item itemvalue="Application.ForTests" />
       </list>
     </recent_temporary>
@@ -219,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661173875968</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="jest ok, pisanie testow">
+      <created>1661183640206</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661183640206</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
