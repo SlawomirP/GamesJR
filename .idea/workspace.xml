@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="tworzenie logiki programu, przed zamiana na static">
+    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="ustawienie limitu na wpisywane liczby">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/DecisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/DecisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/ForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/ForTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/SetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/SetCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
@@ -152,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661162956236</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="chyba jest juz ok">
+      <created>1661171457870</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661171457870</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ustawienie limitu na wpisywane liczby">
+      <created>1661171610365</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661171610365</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +184,8 @@
     <MESSAGE value="stworzenie klasy liczacej trafione numery" />
     <MESSAGE value="tworzenie logiki programu" />
     <MESSAGE value="tworzenie logiki programu, przed zamiana na static" />
-    <option name="LAST_COMMIT_MESSAGE" value="tworzenie logiki programu, przed zamiana na static" />
+    <MESSAGE value="chyba jest juz ok" />
+    <MESSAGE value="ustawienie limitu na wpisywane liczby" />
+    <option name="LAST_COMMIT_MESSAGE" value="ustawienie limitu na wpisywane liczby" />
   </component>
 </project>

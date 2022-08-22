@@ -22,9 +22,4 @@ public class RandomSetCreator {
         return this.set;
     }
 
-    public void printSet() {
-        for (Integer number : this.set) {
-            System.out.println(number);
-        }
-    }
 }
