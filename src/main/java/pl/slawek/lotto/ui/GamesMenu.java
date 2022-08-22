@@ -14,17 +14,18 @@ import static pl.slawek.lotto.logic.IsInBounds.isInBounds;
 
 public class GamesMenu {
     private final Scanner scanner = new Scanner(System.in);
-    private SetCreator userNumbers = new SetCreator();
-    private final static RandomSetCreator RANDOM_SET_CREATOR = new RandomSetCreator();
-    private HashSet<Integer> randomComputerNumbers = RANDOM_SET_CREATOR.getRandomNumbersSet();
-    private final static HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
-    private final static WinningDecision WINNING_DECISION = new WinningDecision();
+    private final SetCreator userNumbers = new SetCreator();
+    private final RandomSetCreator RANDOM_SET_CREATOR = new RandomSetCreator();
+    private final HashSet<Integer> randomComputerNumbers = RANDOM_SET_CREATOR.getRandomNumbersSet();
+    private final HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
+    private final WinningDecision WINNING_DECISION = new WinningDecision();
 
-    private final static Messages message = new Messages();
+    private final Messages message = new Messages();
     private final static int LIMIT = 6;
 
-    private static boolean wantToPlay = true;
+    private boolean wantToPlay = true;
     private int userNumber = 0;
+    private String userDecision;
 
 
     public GamesMenu() {
@@ -35,7 +36,7 @@ public class GamesMenu {
             message.introductionMessage();
             message.gamesMenuMessage();
 
-            String userDecision = scanner.next();
+            userDecision = scanner.next();
 
             if (userDecision.equals("1")) {
                 message.lottoGameIntroductionMessage();
