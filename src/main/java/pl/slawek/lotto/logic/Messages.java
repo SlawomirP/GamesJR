@@ -15,6 +15,9 @@ public class Messages {
         System.out.println("Hello !!! You have chosen Lotto.\n");
     }
 
+    public void endProgramMessage(){
+        System.out.println("Bye Bye");
+    }
     public void lottoGameRulesMessage() {
         System.out.println("You have to choose 6 numbers from range 1 to 99.\n" +
                 "You can't repeat the numbers.\n" +
@@ -26,5 +29,8 @@ public class Messages {
 
     public void chosenWrongOptionMessage(){
         System.out.println("Please, choose correct option.");
+    }
+    public void wantPlayAgain(){
+        System.out.println("Do you want play again ?? y/n");
     }
 }
