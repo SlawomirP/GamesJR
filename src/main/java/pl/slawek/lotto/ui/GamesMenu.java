@@ -16,7 +16,7 @@ public class GamesMenu {
     private final Scanner scanner = new Scanner(System.in);
     private final SetCreator userNumbers = new SetCreator();
     private static final RandomSetCreator RANDOM_SET_CREATOR = new RandomSetCreator();
-    private static final HashSet<Integer> randomComputerNumbers = RANDOM_SET_CREATOR.getRandomNumbersSet();
+    private static final HashSet<Integer> RANDOM_COMPUTER_NUMBERS = RANDOM_SET_CREATOR.getRandomNumbersSet();
     private static final HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
     private static final WinningDecision WINNING_DECISION = new WinningDecision();
 
@@ -57,7 +57,7 @@ public class GamesMenu {
                     }
                 } while (userNumbers.getSize() != LIMIT);
 
-                WINNING_DECISION.decisionAboutWin(HIT_NUMBERS_COUNTER.howManyHitNumbers(userNumbers.getSet(), randomComputerNumbers), LIMIT);
+                WINNING_DECISION.decisionAboutWin(HIT_NUMBERS_COUNTER.howManyHitNumbers(userNumbers.getSet(), RANDOM_COMPUTER_NUMBERS), LIMIT);
 
                 userNumbers.cleanSet();
 

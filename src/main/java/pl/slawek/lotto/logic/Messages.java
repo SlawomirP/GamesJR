@@ -41,8 +41,8 @@ public class Messages {
         System.out.println("You use not this type of data. Write number");
     }
 
-    public void freeSpaceCreator(int numberOfEmptyRow) {
-        for (int i = 1; i <= numberOfEmptyRow; i++) {
+    public void freeSpaceCreator(int numberOfEmptyRows) {
+        for (int i = 1; i <= numberOfEmptyRows; i++) {
             System.out.println("\n");
         }
     }
