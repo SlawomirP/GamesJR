@@ -56,24 +56,18 @@ public class GamesMenu {
                     userNumbers.addToSet(userNumber);
                 } while (userNumbers.getSize() != LIMIT);
 
-                int hit = HIT_NUMBERS_COUNTER.howManyHitNumbers(userNumbers.getSet(), randomComputerNumbers);
-                WINNING_DECISION.decisionAboutWin(hit, LIMIT);
+                WINNING_DECISION.decisionAboutWin(HIT_NUMBERS_COUNTER.howManyHitNumbers(userNumbers.getSet(), randomComputerNumbers), LIMIT);
 
                 System.out.println("-----" + userNumbers.getSet());
-
 
                 userNumbers.cleanSet();
                 message.wantPlayAgain();
             wantToPlay = whatDecisionIs(scanner.next());
             }
-
             if (userDecision.equals("0")) {
                 message.endProgramMessage();
                 break;
             }
-
-
-//
         }
     }
 }
