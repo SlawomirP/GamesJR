@@ -15,12 +15,12 @@ import static pl.slawek.lotto.logic.IsInBounds.isInBounds;
 public class GamesMenu {
     private final Scanner scanner = new Scanner(System.in);
     private final SetCreator userNumbers = new SetCreator();
-    private final RandomSetCreator RANDOM_SET_CREATOR = new RandomSetCreator();
-    private final HashSet<Integer> randomComputerNumbers = RANDOM_SET_CREATOR.getRandomNumbersSet();
-    private final HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
-    private final WinningDecision WINNING_DECISION = new WinningDecision();
+    private static final RandomSetCreator RANDOM_SET_CREATOR = new RandomSetCreator();
+    private static final HashSet<Integer> randomComputerNumbers = RANDOM_SET_CREATOR.getRandomNumbersSet();
+    private static final HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
+    private static final WinningDecision WINNING_DECISION = new WinningDecision();
 
-    private final Messages message = new Messages();
+    private static final Messages MESSAGE = new Messages();
     private final static int LIMIT = 6;
 
     private boolean wantToPlay = true;
@@ -33,27 +33,27 @@ public class GamesMenu {
 
     public void start() {
         while (wantToPlay) {
-            message.introductionMessage();
-            message.gamesMenuMessage();
+            MESSAGE.introductionMessage();
+            MESSAGE.gamesMenuMessage();
 
             userDecision = scanner.next();
 
             if (userDecision.equals("1")) {
-                message.lottoGameIntroductionMessage();
-                message.lottoGameRulesMessage();
+                MESSAGE.lottoGameIntroductionMessage();
+                MESSAGE.lottoGameRulesMessage();
 
                 do {
                     if (scanner.hasNextInt()) {
                         userNumber = scanner.nextInt();
                     } else {
-                        message.wrongInputTypeMessage();
+                        MESSAGE.wrongInputTypeMessage();
                         scanner.next();
                         continue;
                     }
                     if (isInBounds(userNumber)) {
                         userNumbers.addToSet(userNumber);
                     } else {
-                        message.lottoGameOutOfBoundMessage();
+                        MESSAGE.lottoGameOutOfBoundMessage();
                     }
                 } while (userNumbers.getSize() != LIMIT);
 
@@ -61,17 +61,17 @@ public class GamesMenu {
 
                 userNumbers.cleanSet();
 
-                message.wantPlayAgain();
+                MESSAGE.wantPlayAgain();
                 wantToPlay = whatDecisionIs(scanner.next());
                 continue;
             }
             if (userDecision.equals("0")) {
-                message.endProgramMessage();
+                MESSAGE.endProgramMessage();
                 break;
             }
             if (!userDecision.equals("0") || !userDecision.equals("1")) {
-                message.chosenWrongOptionMessage();
-                message.freeSpaceCreator(1);
+                MESSAGE.chosenWrongOptionMessage();
+                MESSAGE.freeSpaceCreator(1);
             }
         }
     }
