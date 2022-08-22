@@ -24,6 +24,9 @@ public class SetCreator{
     public boolean contains(int number){
         return this.set.contains(number);
     }
+    public void cleanSet(){
+        this.set.clear();
+    }
 
     public void printSet(){
         for(Integer number: this.set){

@@ -20,7 +20,7 @@ public class Messages {
     }
     public void lottoGameRulesMessage() {
         System.out.println("You have to choose 6 numbers from range 1 to 99.\n" +
-                "You can't repeat the numbers.\n" +
+                "You can't repeat the numbers and use different type of data.\n" +
                 "Press ENTER after input every single number.");
     }
     public void lottoGameOutOfBoundMessage(){
@@ -32,5 +32,8 @@ public class Messages {
     }
     public void wantPlayAgain(){
         System.out.println("Do you want play again ?? y/n");
+    }
+    public void wrongInputTypeMessage(){
+        System.out.println("You use not this type of data. Write number");
     }
 }

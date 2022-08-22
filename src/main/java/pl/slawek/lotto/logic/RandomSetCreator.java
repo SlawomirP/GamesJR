@@ -2,26 +2,28 @@ package pl.slawek.lotto.logic;
 
 import java.util.HashSet;
 
+import static pl.slawek.lotto.logic.RandomNumberGenerator.inputNumber;
+
 public class RandomSetCreator {
     private final static int LIMIT = 6;
-    private final int LOWER_BOUND = 1;
-    private final int UPPER_BOUND = 99;
+    private final static int LOWER_BOUND = 1;
+    private final static int UPPER_BOUND = 99;
 
-    private HashSet<Integer> set = new HashSet<>();
-    private RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
+    private HashSet<Integer> set;
 
     public RandomSetCreator() {
+        this.set = new HashSet<>();
     }
 
     public HashSet<Integer> getRandomNumbersSet() {
         while (this.set.size() != LIMIT) {
-            this.set.add(randomNumberGenerator.inputNumber(LOWER_BOUND, UPPER_BOUND));
+            this.set.add(inputNumber(LOWER_BOUND, UPPER_BOUND));
         }
         return this.set;
     }
 
-    public void printSet(){
-        for(Integer number: this.set){
+    public void printSet() {
+        for (Integer number : this.set) {
             System.out.println(number);
         }
     }
