@@ -7,7 +7,7 @@ class DecisionCheckerTest {
 
     @Test
 
-    public void whatDecisionIs_String_y_True(){
+    public void whatDecisionIs_String_y_True() {
         //given
         new DecisionChecker();
         //when
@@ -17,7 +17,7 @@ class DecisionCheckerTest {
     }
 
     @Test
-    public void whatDecisionIs_String_Y_True(){
+    public void whatDecisionIs_String_Y_True() {
         //given
         new DecisionChecker();
         //when
@@ -27,7 +27,7 @@ class DecisionCheckerTest {
     }
 
     @Test
-    public void whatDecisionIs_String_N_False(){
+    public void whatDecisionIs_String_N_False() {
         //given
         new DecisionChecker();
         //when
@@ -37,7 +37,7 @@ class DecisionCheckerTest {
     }
 
     @Test
-    public void whatDecisionIs_String_n_False(){
+    public void whatDecisionIs_String_n_False() {
         //given
         new DecisionChecker();
         //when
@@ -47,7 +47,7 @@ class DecisionCheckerTest {
     }
 
     @Test
-    public void whatDecisionIs_String_Yy_False(){
+    public void whatDecisionIs_String_Yy_False() {
         //given
         new DecisionChecker();
         //when
@@ -57,7 +57,7 @@ class DecisionCheckerTest {
     }
 
     @Test
-    public void whatDecisionIs_Empty_False(){
+    public void whatDecisionIs_Empty_False() {
         //given
         new DecisionChecker();
         //when
@@ -65,6 +65,6 @@ class DecisionCheckerTest {
         //then
         Assertions.assertEquals(false, result);
     }
-    
+
 
 }
