@@ -34,8 +34,8 @@ public class GamesMenu {
 
     public void start() {
         while (wantToPlay) {
-            MESSAGE.introductionMessage();
-            MESSAGE.gamesMenuMessage();
+            System.out.println(MESSAGE.INTRODUCTION_MESSAGE);
+            System.out.println(MESSAGE.GAMES_MENU_MESSAGE);
 
             userDecision = SCANNER.next();
 

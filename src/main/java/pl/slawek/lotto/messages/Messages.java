@@ -2,14 +2,10 @@ package pl.slawek.lotto.messages;
 
 public class Messages {
 
-    public void introductionMessage() {
-        System.out.println("Welcome, please choose your game number.");
-    }
+    public static final String INTRODUCTION_MESSAGE = "Welcome, please choose your game number.";
 
-    public void gamesMenuMessage() {
-        System.out.println("1 - Lotto\n" +
-                "0 - End the program");
-    }
+    public static final String GAMES_MENU_MESSAGE = "1 - Lotto\n" + "0 - End the program";
+
 
     public void lottoGameIntroductionMessage() {
         System.out.println("Hello !!! You have chosen Lotto.\n");
