@@ -23,13 +23,14 @@ public class GamesMenu {
     private static final Messages MESSAGE = new Messages();
     private final static int LIMIT = 6;
 
-    private boolean wantToPlay = true;
-    private int userNumber = 0;
-    private String userDecision;
+
 
 
     public GamesMenu() {
     }
+    private boolean wantToPlay = true;
+    private int userNumber = 0;
+    private String userDecision;
 
     public void start() {
         while (wantToPlay) {
