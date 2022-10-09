@@ -1,7 +1,7 @@
 package pl.slawek.lotto.ui;
 
 import pl.slawek.lotto.logic.HitNumbersCounter;
-import pl.slawek.lotto.logic.Messages;
+import pl.slawek.lotto.messages.Messages;
 import pl.slawek.lotto.logic.RandomSetCreator;
 import pl.slawek.lotto.logic.SetCreator;
 import pl.slawek.lotto.logic.WinningDecision;
@@ -13,7 +13,7 @@ import static pl.slawek.lotto.logic.DecisionChecker.whatDecisionIs;
 import static pl.slawek.lotto.logic.IsInBounds.isInBounds;
 
 public class GamesMenu {
-    private final Scanner scanner = new Scanner(System.in);
+    private static final Scanner SCANNER = new Scanner(System.in);
     private final SetCreator userNumbers = new SetCreator();
     private static final RandomSetCreator RANDOM_SET_CREATOR = new RandomSetCreator();
     private static final HashSet<Integer> RANDOM_COMPUTER_NUMBERS = RANDOM_SET_CREATOR.getRandomNumbersSet();
@@ -36,18 +36,18 @@ public class GamesMenu {
             MESSAGE.introductionMessage();
             MESSAGE.gamesMenuMessage();
 
-            userDecision = scanner.next();
+            userDecision = SCANNER.next();
 
             if (userDecision.equals("1")) {
                 MESSAGE.lottoGameIntroductionMessage();
                 MESSAGE.lottoGameRulesMessage();
 
                 do {
-                    if (scanner.hasNextInt()) {
-                        userNumber = scanner.nextInt();
+                    if (SCANNER.hasNextInt()) {
+                        userNumber = SCANNER.nextInt();
                     } else {
                         MESSAGE.wrongInputTypeMessage();
-                        scanner.next();
+                        SCANNER.next();
                         continue;
                     }
                     if (isInBounds(userNumber)) {
@@ -62,7 +62,7 @@ public class GamesMenu {
                 userNumbers.cleanSet();
 
                 MESSAGE.wantPlayAgain();
-                wantToPlay = whatDecisionIs(scanner.next());
+                wantToPlay = whatDecisionIs(SCANNER.next());
                 continue;
             }
             if (userDecision.equals("0")) {

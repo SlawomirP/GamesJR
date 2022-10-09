@@ -1,4 +1,4 @@
-package pl.slawek.lotto.logic;
+package pl.slawek.lotto.messages;
 
 public class Messages {
 
