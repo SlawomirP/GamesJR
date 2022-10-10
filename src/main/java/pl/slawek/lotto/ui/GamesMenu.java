@@ -20,41 +20,40 @@ public class GamesMenu {
     private static final HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
     private static final WinningDecision WINNING_DECISION = new WinningDecision();
 
-    private static final Messages MESSAGE = new Messages();
+    //    private static final Messages MESSAGE = new Messages();
     private final static int LIMIT = 6;
-
-
 
 
     public GamesMenu() {
     }
+
     private boolean wantToPlay = true;
     private int userNumber = 0;
     private String userDecision;
 
     public void start() {
         while (wantToPlay) {
-            System.out.println(MESSAGE.INTRODUCTION_MESSAGE);
-            System.out.println(MESSAGE.GAMES_MENU_MESSAGE);
+            System.out.println(Messages.INTRODUCTION_MESSAGE);
+            System.out.println(Messages.GAMES_MENU_MESSAGE);
 
             userDecision = SCANNER.next();
 
             if (userDecision.equals("1")) {
-                MESSAGE.lottoGameIntroductionMessage();
-                MESSAGE.lottoGameRulesMessage();
+                System.out.println(Messages.LOTTO_INTRODUCTION_MESSAGE);
+                System.out.println(Messages.LOTTO_GAME_RULES);
 
                 do {
                     if (SCANNER.hasNextInt()) {
                         userNumber = SCANNER.nextInt();
                     } else {
-                        MESSAGE.wrongInputTypeMessage();
+                        System.out.println(Messages.WRONG_INPUT_TYPE_MESSAGE);
                         SCANNER.next();
                         continue;
                     }
                     if (isInBounds(userNumber)) {
                         userNumbers.addToSet(userNumber);
                     } else {
-                        MESSAGE.lottoGameOutOfBoundMessage();
+                        System.out.println(Messages.LOTTO_GAME_OUT_OF_BOUND_MESSAGE);
                     }
                 } while (userNumbers.getSize() != LIMIT);
 
@@ -62,17 +61,17 @@ public class GamesMenu {
 
                 userNumbers.cleanSet();
 
-                MESSAGE.wantPlayAgain();
+                System.out.println(Messages.WANT_PLAY_AGAIN);
                 wantToPlay = whatDecisionIs(SCANNER.next());
                 continue;
             }
             if (userDecision.equals("0")) {
-                MESSAGE.endProgramMessage();
+                System.out.println(Messages.END_PROGRAM_MESSAGE);
                 break;
             }
             if (!userDecision.equals("0") || !userDecision.equals("1")) {
-                MESSAGE.chosenWrongOptionMessage();
-                MESSAGE.freeSpaceCreator(1);
+                System.out.println(Messages.CHOSEN_WRONG_OPTION_MESSAGE);
+                System.out.println(Messages.FREE_SPACE_CREATOR);
             }
         }
     }
