@@ -1,5 +1,6 @@
 package pl.slawek.lotto.ui;
 
+import pl.slawek.lotto.configuration.LottoConfiguration;
 import pl.slawek.lotto.logic.HitNumbersCounter;
 import pl.slawek.lotto.messages.Messages;
 import pl.slawek.lotto.logic.RandomSetCreator;
@@ -19,10 +20,6 @@ public class GamesMenu {
     private static final HashSet<Integer> RANDOM_COMPUTER_NUMBERS = RANDOM_SET_CREATOR.getRandomNumbersSet();
     private static final HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
     private static final WinningDecision WINNING_DECISION = new WinningDecision();
-
-    //    private static final Messages MESSAGE = new Messages();
-    private final static int LIMIT = 6;
-
 
     public GamesMenu() {
     }
@@ -55,9 +52,9 @@ public class GamesMenu {
                     } else {
                         System.out.println(Messages.LOTTO_GAME_OUT_OF_BOUND_MESSAGE);
                     }
-                } while (userNumbers.getSize() != LIMIT);
+                } while (userNumbers.getSize() != LottoConfiguration.LIMIT);
 
-                WINNING_DECISION.decisionAboutWin(HIT_NUMBERS_COUNTER.howManyHitNumbers(userNumbers.getSet(), RANDOM_COMPUTER_NUMBERS), LIMIT);
+                WINNING_DECISION.decisionAboutWin(HIT_NUMBERS_COUNTER.howManyHitNumbers(userNumbers.getSet(), RANDOM_COMPUTER_NUMBERS), LottoConfiguration.LIMIT);
 
                 userNumbers.cleanSet();
 
