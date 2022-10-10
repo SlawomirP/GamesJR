@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="correctingTheProject - after InputData tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/ui/GamesMenuTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/inputFromUser/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/inputFromUser/InputData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/inputFromUser/InputDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/inputFromUser/InputDataTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +59,12 @@
       <recent name="pl.slawek.lotto.ui" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.slawek.lotto.ui" />
       <recent name="pl.slawek.lotto.inputFromUser" />
       <recent name="pl.slawek.lotto.logic" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InputDataTest">
+  <component name="RunManager" selected="JUnit.All in GamesJR">
     <configuration name="MainForGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.slawek.MainForGames" />
       <module name="GamesJR" />
@@ -76,6 +74,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in GamesJR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GamesJR" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,29 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputSevenDifferentNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GamesJR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.inputFromUser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.slawek.lotto.inputFromUser" />
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.inputFromUser.InputDataTest" />
-      <option name="METHOD_NAME" value="getNumbersMethodShouldReturnCorrectSetAfterInputSevenDifferentNumbers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in GamesJR" />
         <item itemvalue="JUnit.InputDataTest" />
         <item itemvalue="Application.MainForGames" />
         <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewDifferentDataTypes" />
         <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewNumbersOutOfRange" />
-        <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputSevenDifferentNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -358,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665424191321</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="correctingTheProject - after InputData tests">
+      <created>1665424461884</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1665424461884</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
