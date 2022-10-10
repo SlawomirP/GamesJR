@@ -1,25 +1,23 @@
 package pl.slawek.lotto.ui;
 
 import pl.slawek.lotto.configuration.LottoConfiguration;
-import pl.slawek.lotto.logic.HitNumbersCounter;
+import pl.slawek.lotto.inputFromUser.InputData;
+import pl.slawek.lotto.logic.HitCounter;
+import pl.slawek.lotto.logic.RandomNumbersSet;
+import pl.slawek.lotto.logic.WinDecision;
 import pl.slawek.lotto.messages.Messages;
-import pl.slawek.lotto.logic.RandomSetCreator;
-import pl.slawek.lotto.logic.SetCreator;
-import pl.slawek.lotto.logic.WinningDecision;
 
 import java.util.HashSet;
 import java.util.Scanner;
 
 import static pl.slawek.lotto.logic.DecisionChecker.whatDecisionIs;
-import static pl.slawek.lotto.logic.IsInBounds.isInBounds;
 
 public class GamesMenu {
-    private static final Scanner SCANNER = new Scanner(System.in);
-    private final SetCreator userNumbers = new SetCreator();
-    private static final RandomSetCreator RANDOM_SET_CREATOR = new RandomSetCreator();
-    private static final HashSet<Integer> RANDOM_COMPUTER_NUMBERS = RANDOM_SET_CREATOR.getRandomNumbersSet();
-    private static final HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
-    private static final WinningDecision WINNING_DECISION = new WinningDecision();
+    private final Scanner SCANNER = new Scanner(System.in);
+    private final HitCounter hitCounter = new HitCounter();
+    private final WinDecision winDecision = new WinDecision();
+    private final InputData inputUserData = new InputData();
+    private final RandomNumbersSet randomNumbers = new RandomNumbersSet();
 
     public GamesMenu() {
     }
@@ -30,33 +28,22 @@ public class GamesMenu {
 
     public void start() {
         while (wantToPlay) {
+
             System.out.println(Messages.INTRODUCTION_MESSAGE);
             System.out.println(Messages.GAMES_MENU_MESSAGE);
 
             userDecision = SCANNER.next();
 
             if (userDecision.equals("1")) {
+
                 System.out.println(Messages.LOTTO_INTRODUCTION_MESSAGE);
                 System.out.println(Messages.LOTTO_GAME_RULES);
 
-                do {
-                    if (SCANNER.hasNextInt()) {
-                        userNumber = SCANNER.nextInt();
-                    } else {
-                        System.out.println(Messages.WRONG_INPUT_TYPE_MESSAGE);
-                        SCANNER.next();
-                        continue;
-                    }
-                    if (isInBounds(userNumber)) {
-                        userNumbers.addToSet(userNumber);
-                    } else {
-                        System.out.println(Messages.LOTTO_GAME_OUT_OF_BOUND_MESSAGE);
-                    }
-                } while (userNumbers.getSize() != LottoConfiguration.LIMIT);
+                HashSet<Integer> userNumbers = inputUserData.getNumbers();
+                HashSet<Integer> drawn = randomNumbers.getRandomNumbersSet();
 
-                WINNING_DECISION.decisionAboutWin(HIT_NUMBERS_COUNTER.howManyHitNumbers(userNumbers.getSet(), RANDOM_COMPUTER_NUMBERS), LottoConfiguration.LIMIT);
-
-                userNumbers.clean();
+                winDecision.decisionAboutWin(hitCounter.howManyHits(userNumbers, drawn), LottoConfiguration.LIMIT);
+                userNumbers.clear();
 
                 System.out.println(Messages.WANT_PLAY_AGAIN);
                 wantToPlay = whatDecisionIs(SCANNER.next());
@@ -73,3 +60,4 @@ public class GamesMenu {
         }
     }
 }
+

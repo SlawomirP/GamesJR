@@ -24,4 +24,8 @@ public class Messages {
 
     public static final String FREE_SPACE_CREATOR = "\n + \n";
 
+    public static final String WIN_MESSAGE = "Great !!! You are the WINNER !!!";
+
+    public static final String LOSE_MESSAGE = "You lose, but don't worry, you can try again.";
+
 }

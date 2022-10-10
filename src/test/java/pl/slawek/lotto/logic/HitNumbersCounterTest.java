@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class HitNumbersCounterTest {
 
-    private final static HitNumbersCounter HIT_NUMBERS_COUNTER = new HitNumbersCounter();
+    private final static HitCounter HIT_NUMBERS_COUNTER = new HitCounter();
     private final static SetsForTests SETS = new SetsForTests();
 
 
@@ -15,7 +15,7 @@ class HitNumbersCounterTest {
         //given
 
         //when
-        int result = HIT_NUMBERS_COUNTER.howManyHitNumbers(SETS.basicNumberSet(), SETS.noTheSameNumbersAsBasic());
+        int result = HIT_NUMBERS_COUNTER.howManyHits(SETS.basicNumberSet(), SETS.noTheSameNumbersAsBasic());
         //then
         Assertions.assertEquals(0, result);
     }
@@ -25,7 +25,7 @@ class HitNumbersCounterTest {
         //given
 
         //when
-        int result = HIT_NUMBERS_COUNTER.howManyHitNumbers(SETS.basicNumberSet(), SETS.allTheSameNumberaAsBasic());
+        int result = HIT_NUMBERS_COUNTER.howManyHits(SETS.basicNumberSet(), SETS.allTheSameNumberaAsBasic());
         //then
         Assertions.assertEquals(6, result);
     }
@@ -35,7 +35,7 @@ class HitNumbersCounterTest {
         //given
 
         //when
-        int result = HIT_NUMBERS_COUNTER.howManyHitNumbers(SETS.basicNumberSet(), SETS.threeTheSameNumbersAsBasic());
+        int result = HIT_NUMBERS_COUNTER.howManyHits(SETS.basicNumberSet(), SETS.threeTheSameNumbersAsBasic());
         //then
         Assertions.assertEquals(3, result);
     }
@@ -45,7 +45,7 @@ class HitNumbersCounterTest {
         //given
 
         //when
-        int result = HIT_NUMBERS_COUNTER.howManyHitNumbers(SETS.basicNumberSet(), SETS.oneTheSameNumberAsBasic());
+        int result = HIT_NUMBERS_COUNTER.howManyHits(SETS.basicNumberSet(), SETS.oneTheSameNumberAsBasic());
         //then
         Assertions.assertEquals(1, result);
     }
