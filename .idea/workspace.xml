@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="correctingTheProject - refactoring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/inputFromUser/InputData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/HitCounter.java" afterDir="false" />
+    <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="correctingTheProject - time for tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/inputFromUser/InputDataTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/DecisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/DecisionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/HitNumbersCounter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumberGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomSetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumbersSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/SetCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/WinningDecision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/WinDecision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/messages/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/messages/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/inputFromUser/InputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/inputFromUser/InputData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/HitNumbersCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/HitNumbersCounterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +20,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -70,89 +62,98 @@
       <recent name="pl.slawek.lotto.ui" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.slawek.lotto.inputFromUser" />
       <recent name="pl.slawek.lotto.logic" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.pl.slawek.lotto.logic in GamesJR">
-    <configuration name="MainForGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.MainForGames" />
+  <component name="RunManager" selected="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewDifferentDataTypes">
+    <configuration name="InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewDifferentDataTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GamesJR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.slawek.*" />
+          <option name="PATTERN" value="pl.slawek.lotto.inputFromUser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.inputFromUser" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.inputFromUser.InputDataTest" />
+      <option name="METHOD_NAME" value="getNumbersMethodShouldReturnCorrectSetAfterInputAFewDifferentDataTypes" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsInBoundsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewNumbersOutOfRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GamesJR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.messages.*" />
+          <option name="PATTERN" value="pl.slawek.lotto.inputFromUser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.IsInBoundsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.inputFromUser" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.inputFromUser.InputDataTest" />
+      <option name="METHOD_NAME" value="getNumbersMethodShouldReturnCorrectSetAfterInputAFewNumbersOutOfRange" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomSetCreatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputSevenDifferentNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GamesJR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.messages.*" />
+          <option name="PATTERN" value="pl.slawek.lotto.inputFromUser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.RandomSetCreatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.inputFromUser" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.inputFromUser.InputDataTest" />
+      <option name="METHOD_NAME" value="getNumbersMethodShouldReturnCorrectSetAfterInputSevenDifferentNumbers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinningDecisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputSixDifferentNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GamesJR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.messages.*" />
+          <option name="PATTERN" value="pl.slawek.lotto.inputFromUser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.logic.WinningDecisionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.inputFromUser" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.inputFromUser.InputDataTest" />
+      <option name="METHOD_NAME" value="getNumbersMethodShouldReturnCorrectSetAfterInputSixDifferentNumbers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pl.slawek.lotto.logic in GamesJR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputDataTest.getNumbersMethodShouldReturnCorrectSizeSetAfterInputSixDifferentNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GamesJR" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.messages.*" />
+          <option name="PATTERN" value="pl.slawek.lotto.inputFromUser.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.slawek.lotto.logic" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.inputFromUser" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.inputFromUser.InputDataTest" />
+      <option name="METHOD_NAME" value="getNumbersMethodShouldReturnCorrectSizeSetAfterInputSixDifferentNumbers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.pl.slawek.lotto.logic in GamesJR" />
-        <item itemvalue="Application.MainForGames" />
-        <item itemvalue="JUnit.WinningDecisionTest" />
-        <item itemvalue="JUnit.RandomSetCreatorTest" />
-        <item itemvalue="JUnit.IsInBoundsTest" />
+        <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewDifferentDataTypes" />
+        <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewNumbersOutOfRange" />
+        <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputSevenDifferentNumbers" />
+        <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputSixDifferentNumbers" />
+        <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSizeSetAfterInputSixDifferentNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665406284410</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="correctingTheProject - time for tests">
+      <created>1665415577669</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665415577669</updated>
+    </task>
+    <task id="LOCAL-00027" summary="correctingTheProject - time for tests">
+      <created>1665415823837</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665415823837</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,6 +384,7 @@
     <MESSAGE value="correctingTheProject - corrected messages system" />
     <MESSAGE value="correctingTheProject - configuration class" />
     <MESSAGE value="correctingTheProject - refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="correctingTheProject - refactoring" />
+    <MESSAGE value="correctingTheProject - time for tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="correctingTheProject - time for tests" />
   </component>
 </project>

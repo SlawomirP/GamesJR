@@ -13,7 +13,7 @@ import java.util.Scanner;
 import static pl.slawek.lotto.logic.DecisionChecker.whatDecisionIs;
 
 public class GamesMenu {
-    private final Scanner SCANNER = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
     private final HitCounter hitCounter = new HitCounter();
     private final WinDecision winDecision = new WinDecision();
     private final InputData inputUserData = new InputData();
@@ -31,21 +31,21 @@ public class GamesMenu {
             System.out.println(Messages.INTRODUCTION_MESSAGE);
             System.out.println(Messages.GAMES_MENU_MESSAGE);
 
-            userDecision = SCANNER.next();
+            userDecision = scanner.next();
 
             if (userDecision.equals("1")) {
 
                 System.out.println(Messages.LOTTO_INTRODUCTION_MESSAGE);
                 System.out.println(Messages.LOTTO_GAME_RULES);
 
-                HashSet<Integer> userNumbers = inputUserData.getNumbers();
+                HashSet<Integer> userNumbers = inputUserData.getNumbers(scanner);
                 HashSet<Integer> drawn = randomNumbers.getRandomNumbersSet();
 
                 winDecision.decisionAboutWin(hitCounter.howManyHits(userNumbers, drawn), LottoConfiguration.LIMIT);
                 userNumbers.clear();
 
                 System.out.println(Messages.WANT_PLAY_AGAIN);
-                wantToPlay = whatDecisionIs(SCANNER.next());
+                wantToPlay = whatDecisionIs(scanner.next());
                 continue;
             }
             if (userDecision.equals("0")) {
