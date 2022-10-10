@@ -21,7 +21,7 @@ public class SetCreator {
         return this.set;
     }
 
-    public void cleanSet() {
+    public void clean() {
         this.set.clear();
     }
 }

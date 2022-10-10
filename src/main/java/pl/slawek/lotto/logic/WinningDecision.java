@@ -9,4 +9,5 @@ public class WinningDecision {
             System.out.println("Your result is " + hitResult + "/" + limit + "\nDon't worry, you can try again.");
         }
     }
+
 }

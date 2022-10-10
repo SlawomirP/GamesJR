@@ -56,7 +56,7 @@ public class GamesMenu {
 
                 WINNING_DECISION.decisionAboutWin(HIT_NUMBERS_COUNTER.howManyHitNumbers(userNumbers.getSet(), RANDOM_COMPUTER_NUMBERS), LottoConfiguration.LIMIT);
 
-                userNumbers.cleanSet();
+                userNumbers.clean();
 
                 System.out.println(Messages.WANT_PLAY_AGAIN);
                 wantToPlay = whatDecisionIs(SCANNER.next());
