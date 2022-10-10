@@ -93,5 +93,4 @@ class InputDataTest {
         System.setIn(stdin);
         return scanner;
     }
-
 }

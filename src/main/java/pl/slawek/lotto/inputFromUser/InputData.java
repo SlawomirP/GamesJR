@@ -4,14 +4,11 @@ import pl.slawek.lotto.configuration.LottoConfiguration;
 import pl.slawek.lotto.messages.Messages;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Scanner;
 
 import static pl.slawek.lotto.logic.IsInBounds.isInBounds;
 
 public class InputData {
-
-    private Scanner scanner = new Scanner(System.in);
 
     public HashSet<Integer> getNumbers(Scanner scanner) {
         HashSet<Integer> userNumbers = new HashSet<>();
