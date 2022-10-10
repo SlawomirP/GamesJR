@@ -23,7 +23,6 @@ public class GamesMenu {
     }
 
     private boolean wantToPlay = true;
-    private int userNumber = 0;
     private String userDecision;
 
     public void start() {

@@ -73,7 +73,7 @@
       <recent name="pl.slawek.lotto.logic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainForGames">
+  <component name="RunManager" selected="JUnit.pl.slawek.lotto.logic in GamesJR">
     <configuration name="MainForGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.slawek.MainForGames" />
       <module name="GamesJR" />
@@ -148,8 +148,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainForGames" />
         <item itemvalue="JUnit.pl.slawek.lotto.logic in GamesJR" />
+        <item itemvalue="Application.MainForGames" />
         <item itemvalue="JUnit.WinningDecisionTest" />
         <item itemvalue="JUnit.RandomSetCreatorTest" />
         <item itemvalue="JUnit.IsInBoundsTest" />
