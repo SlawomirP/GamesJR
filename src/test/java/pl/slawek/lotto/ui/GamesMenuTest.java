@@ -8,6 +8,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import pl.slawek.lotto.inputFromUser.InputData;
 import pl.slawek.lotto.logic.HitCounter;
 import pl.slawek.lotto.logic.RandomNumbersSet;
+import pl.slawek.lotto.logic.SetsForTests;
 import pl.slawek.lotto.logic.WinDecision;
 
 import java.io.ByteArrayInputStream;
@@ -33,6 +34,8 @@ class GamesMenuTest {
     @Mock
     private static final RandomNumbersSet RANDOM_NUMBERS = new RandomNumbersSet();
 
+    private static final SetsForTests SETS_FOR_TESTS = new SetsForTests();
+
     @Test
     void startMethod() {
 
@@ -40,7 +43,8 @@ class GamesMenuTest {
         Scanner scanner = mockScannerIn("1 2 3 4 5 6");
         HashSet<Integer> userNumber = INPUT_DATA.getNumbers(scanner);
 
-        given(RANDOM_NUMBERS.getRandomNumbersSet()).willReturn()
+        given(RANDOM_NUMBERS.getRandomNumbersSet()).willReturn(SETS_FOR_TESTS.basicNumberSet());
+        given(userDecision.equals("1")).willReturn(true);
 
 
 
