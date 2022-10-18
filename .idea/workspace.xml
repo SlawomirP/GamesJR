@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4702c26-65b4-4ac2-ae45-6e1a5b86e7bf" name="Changes" comment="correctingTheProject - after InputData tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/GameResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/NumberGenerable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/messages/MessageDisplayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenuOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/ui/NumberGenerableTestImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/MainForGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumbersSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/RandomNumbersSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/WinDecision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/logic/WinDecision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/slawek/lotto/ui/GamesMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/SetsForTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/logic/SetsForTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/ui/GamesMenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/slawek/lotto/ui/GamesMenuTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +27,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -36,21 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/slawo/Desktop/JavaProjekty/JavaW3ResourceExercises&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/slawo/Desktop/JavaProjekty/JavaW3ResourceExercises",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.excludes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.slawek.lotto.logic" />
+      <recent name="pl.slawek.lotto.ui" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -64,7 +79,7 @@
       <recent name="pl.slawek.lotto.logic" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in GamesJR">
+  <component name="RunManager" selected="JUnit.GamesMenuTest.should_return_success_when_user_gave_six_numbers_in_range_of_1_to_99">
     <configuration name="MainForGames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.slawek.MainForGames" />
       <module name="GamesJR" />
@@ -82,6 +97,22 @@
       <module name="GamesJR" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GamesMenuTest.should_return_success_when_user_gave_six_numbers_in_range_of_1_to_99" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="GamesJR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.slawek.lotto.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.slawek.lotto.ui" />
+      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.ui.GamesMenuTest" />
+      <option name="METHOD_NAME" value="should_return_success_when_user_gave_six_numbers_in_range_of_1_to_99" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,29 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewNumbersOutOfRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GamesJR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.slawek.lotto.inputFromUser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.slawek.lotto.inputFromUser" />
-      <option name="MAIN_CLASS_NAME" value="pl.slawek.lotto.inputFromUser.InputDataTest" />
-      <option name="METHOD_NAME" value="getNumbersMethodShouldReturnCorrectSetAfterInputAFewNumbersOutOfRange" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GamesMenuTest.should_return_success_when_user_gave_six_numbers_in_range_of_1_to_99" />
+        <item itemvalue="Application.MainForGames" />
         <item itemvalue="JUnit.All in GamesJR" />
         <item itemvalue="JUnit.InputDataTest" />
-        <item itemvalue="Application.MainForGames" />
         <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewDifferentDataTypes" />
-        <item itemvalue="JUnit.InputDataTest.getNumbersMethodShouldReturnCorrectSetAfterInputAFewNumbersOutOfRange" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +166,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661089386005</updated>
+      <workItem from="1666090891824" duration="2873000" />
     </task>
     <task id="LOCAL-00001" summary="tworzenie podstawowych klas i metod">
       <created>1661100939920</created>
@@ -365,6 +381,9 @@
     <option name="localTasksCounter" value="31" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -394,5 +413,9 @@
     <MESSAGE value="correctingTheProject - time for tests" />
     <MESSAGE value="correctingTheProject - after InputData tests" />
     <option name="LAST_COMMIT_MESSAGE" value="correctingTheProject - after InputData tests" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
